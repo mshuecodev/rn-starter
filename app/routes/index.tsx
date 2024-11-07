@@ -2,22 +2,14 @@ import React, { useState, useEffect } from "react"
 import { NavigationContainer } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 
-import HomeScreen from "@/app/home"
+import ProtectedNav from "./protected"
+import PublicNav from "./public"
 
 const Stack = createNativeStackNavigator()
 
 function Index() {
-	return (
-		<NavigationContainer independent={true}>
-			<Stack.Navigator>
-				<Stack.Screen
-					name="Home"
-					component={HomeScreen}
-					options={{ headerShown: false }}
-				/>
-			</Stack.Navigator>
-		</NavigationContainer>
-	)
+	const [userToken, setUserToken] = useState("test")
+	return <NavigationContainer independent={true}>{userToken ? <ProtectedNav /> : <PublicNav />}</NavigationContainer>
 }
 
 export default Index
