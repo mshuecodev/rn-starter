@@ -4,6 +4,8 @@ import * as SplashScreen from "expo-splash-screen"
 import { useEffect } from "react"
 import "react-native-reanimated"
 import { PaperProvider } from "react-native-paper"
+import { Provider } from "react-redux"
+import store from "@/store"
 
 import { useColorScheme } from "@/hooks/useColorScheme"
 import Routes from "./routes"
@@ -28,12 +30,12 @@ export default function RootLayout() {
 	}
 
 	return (
-		<ThemeProvider
-		// value={colorScheme === "dark" ? DarkTheme : DefaultTheme}
-		>
-			<PaperProvider>
-				<Routes />
-			</PaperProvider>
-		</ThemeProvider>
+		<Provider store={store}>
+			<ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
+				<PaperProvider>
+					<Routes />
+				</PaperProvider>
+			</ThemeProvider>
+		</Provider>
 	)
 }
