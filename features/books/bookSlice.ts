@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit"
-import { fetchBooks as fetchBooksFromService } from "../../services/bookService"
+import { fetchBooks as fetchBooksFromService } from "@/services/bookService"
 import { Book, BooksState } from "./bookTypes"
 
 const initialState: BooksState = {
