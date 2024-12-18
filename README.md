@@ -18,9 +18,9 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 FEATURES LIST
 
--   REACT NAVIGATION
--   AUTHENTICATION FLOW
--   REDUX (STATE MANAGEMENT)
+-   REACT NAVIGATION (DONE)
+-   AUTHENTICATION FLOW (DONE)
+-   REDUX (STATE MANAGEMENT) (DONE)
 -   API INTEGRATION
 
 TO ADD
