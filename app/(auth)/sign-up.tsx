@@ -12,7 +12,7 @@ const SignUpScreen = () => {
 	return (
 		<SafeAreaView className="flex-1 bg-primary-400">
 			<VStack className="flex-1 item-center">
-				<VStack className="flex-1 items-center">
+				<VStack className="flex-1 items-center my-20">
 					<Heading className="text-white">Create Account</Heading>
 					<Text className="text-white mt-2">Sign up to get started!</Text>
 				</VStack>

@@ -12,7 +12,7 @@ const SignInScreen = () => {
 	return (
 		<SafeAreaView className="flex-1 bg-primary-400">
 			<VStack className="flex-1 item-center">
-				<VStack className="flex-1 items-center">
+				<VStack className="flex-1 items-center my-40">
 					<Heading className="text-white">Hello there!</Heading>
 					<Text className="text-white mt-2">Welcome back!</Text>
 				</VStack>
